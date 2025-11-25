@@ -23,3 +23,18 @@ Affichage : Affichez le nom de la boutique, le nombre de jeux en stock, le stock
 const companyName = "PixelBay";
 let stockInitialeJeux = 500;
 let PriceUnitJeu = 15;
+
+console.log("Le nom de la boutique est " + companyName);
+console.log("Le nombre initial de jeux en stock est de " + stockInitialeJeux);
+console.log("Le prix initial d'un jeux en stock est de " + PriceUnitJeu + "€.");
+
+
+let updateNbJeu = stockInitialeJeux * 0.3;
+let resultUpdateNbJeu = stockInitialeJeux - updateNbJeu;
+
+console.log("Le nombre unitaire de jeu vendu en une journer est de " + updateNbJeu);
+console.log("Après la mise à jour, le nombre de jeux en stock est de " + resultUpdateNbJeu);
+
+let resultPriceUnitJeu = PriceUnitJeu * 0.7;
+
+console.log("Après la mise à jour, le Prix Unitaire d'un jeux en stock est de " + resultPriceUnitJeu);
