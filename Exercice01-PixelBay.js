@@ -20,21 +20,52 @@ Calculer le CA total de cette vente (montant total des ventes).
 
 Affichage : Affichez le nom de la boutique, le nombre de jeux en stock, le stock mis à jour et les revenus de la vente en euros en utilisant la concaténation classique. */
 
-const companyName = "PixelBay";
-let stockInitialeJeux = 500;
-let PriceUnitJeu = 15;
+// === DONNÉES INITIALES ===
+// Utiliser const car ces valeurs ne changent pas
+const nomBoutique = "PixelBay";
+const stockInitial = 500;
+const prixParJeu = 15; // en euros
+const pourcentagePromo = 30; // 30% de réduction
 
-console.log("Le nom de la boutique est " + companyName);
-console.log("Le nombre initial de jeux en stock est de " + stockInitialeJeux);
-console.log("Le prix initial d'un jeux en stock est de " + PriceUnitJeu + "€.");
+console.log("=== Bienvenue chez " + nomBoutique + " ! ===\n");
+
+// === CALCULS DE LA PROMOTION ===
+
+// Étape 1 : Calculer combien de jeux sont vendus (30% de 500)
+// Formule : (pourcentage / 100) × stock initial
+const jeuxVendus = (pourcentagePromo / 100) * stockInitial;
+
+// Étape 2 : Calculer le nouveau stock
+// Utiliser let car cette valeur va changer (le stock évolue)
+let stockActuel = stockInitial - jeuxVendus;
+
+// Étape 3 : Calculer le chiffre d'affaires (CA)
+// CA = nombre de jeux vendus × prix unitaire
+const chiffreAffaires = jeuxVendus * prixParJeu;
+
+// === AFFICHAGE DES RÉSULTATS ===
+console.log("📊 État du stock :");
+console.log("Stock initial : " + stockInitial + " jeux");
+console.log("Jeux vendus pendant la promo : " + jeuxVendus + " jeux");
+console.log("Stock restant : " + stockActuel + " jeux");
+
+console.log("\n💰 Résultats financiers :");
+console.log("Chiffre d'affaires généré : " + chiffreAffaires + " €");
 
 
-let updateNbJeu = stockInitialeJeux * 0.3;
-let resultUpdateNbJeu = stockInitialeJeux - updateNbJeu;
+/*## 📝 Explication des Concepts
 
-console.log("Le nombre unitaire de jeu vendu en une journer est de " + updateNbJeu);
-console.log("Après la mise à jour, le nombre de jeux en stock est de " + resultUpdateNbJeu);
+### **const vs let**
 
-let resultPriceUnitJeu = PriceUnitJeu * 0.7;
+- **`const`** = valeur **constante** (ne peut pas être réassignée)
+- Utilisé pour : "nomBoutique", "stockInitial", "prixParJeu", "chiffreAffaires"
+- Ces valeurs ne changent pas pendant l'exécution
 
-console.log("Après la mise à jour, le Prix Unitaire d'un jeux en stock est de " + resultPriceUnitJeu);
+- **`let`** = valeur **variable** (peut être modifiée)
+  - Utilisé pour : "stockActuel"
+  - Le stock évolue au fil des ventes
+
+### **Calcul du pourcentage**
+
+Pour calculer 30% de 500 :
+(30 / 100) × 500 = 0.30 × 500 = 150 jeux vendus*/
