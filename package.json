@@ -1,0 +1,24 @@
+{
+  "name": "javascript-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Exercice 1 - Le Défi du Magasin PixelBay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vortexhub007/javascript-training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vortexhub007/javascript-training/issues"
+  },
+  "homepage": "https://github.com/Vortexhub007/javascript-training#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

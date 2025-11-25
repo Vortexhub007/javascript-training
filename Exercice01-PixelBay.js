@@ -1,0 +1,25 @@
+/* Exercice 1 - Le Défi du Magasin PixelBay
+Tags : let, const, console
+
+Objectif : Comprendre la différence entre let et const en déclarant des variables.
+
+Contexte : C'est le premier jour chez PixelBay ! Vous devez gérer le stock de jeux et calculer les revenus d'une promotion spéciale.
+
+Énoncé :
+
+Initialement, vous avez 500 jeux en stock et chaque jeu rapporte en moyenne 15 €.
+
+Création de la boutique : Déclarez le nom de la boutique et le nombre initial de jeux en stock.
+
+Promotion Spéciale :
+
+Suite à une promotion spéciale, 30% des jeux sont vendus en une journée. 
+Mettez à jour le nombre de jeux en stock.
+
+Calculer le CA total de cette vente (montant total des ventes).
+
+Affichage : Affichez le nom de la boutique, le nombre de jeux en stock, le stock mis à jour et les revenus de la vente en euros en utilisant la concaténation classique. */
+
+const companyName = "PixelBay";
+let stockInitialeJeux = 500;
+let PriceUnitJeu = 15;
