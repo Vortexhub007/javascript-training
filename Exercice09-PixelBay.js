@@ -31,17 +31,17 @@ function fizzBuzz(limite) {
     // CONDITION 1 : Divisible par 3 ET par 5 (donc par 15)
     // ⚠️ IMPORTANT : Cette condition doit être AVANT les autres !
     if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
+      console.log(i,"FizzBuzz");
     }
     
     // CONDITION 2 : Divisible par 3 uniquement
     else if (i % 3 === 0) {
-      console.log("Fizz");
+      console.log(i,"Fizz");
     }
     
     // CONDITION 3 : Divisible par 5 uniquement
     else if (i % 5 === 0) {
-      console.log("Buzz");
+      console.log(i,"Buzz");
     }
     
     // CONDITION 4 : Aucune des conditions précédentes
@@ -54,7 +54,7 @@ function fizzBuzz(limite) {
 }
 
 // ============================================
-// APPEL DE LA FONCTION
+// APPEL DE LA FONCTION LIMITE
 // ============================================
 
 fizzBuzz(151);
