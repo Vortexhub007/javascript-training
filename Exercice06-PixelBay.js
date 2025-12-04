@@ -8,7 +8,7 @@ Vous devez utiliser la boucle for pour parcourir le tableau des jeux et afficher
 
 // === CALENDRIER MARKETING PIXELBAY ===
 
-console.log("=== 🎮 Calendrier Marketing PixelBay 2024 ===\n");
+console.log("=== Calendrier Marketing PixelBay 2024 ===\n");
 
 // === DONNÉES : MOIS ET JEUX ===
 

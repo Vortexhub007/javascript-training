@@ -3,7 +3,7 @@
 
 on va convertir des fahrenheit en celsius*/
 
-import readlineSync from "readline-sync"; //cf ligne pour les explications
+const readlineSync = require('readline-sync'); //cf ligne pour les explications
 
 // -------------------------------------------------------------------------------------------------------------
 //On determine d'abord les etapes de conversions et les variables qui vont avec:
@@ -47,4 +47,4 @@ function fToC(fValue, symbol) {
   }
 }
 
-fToC(nom,"°")
+fToC(nom,"C°")

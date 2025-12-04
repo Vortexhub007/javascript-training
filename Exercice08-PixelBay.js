@@ -73,6 +73,8 @@ const prixJeu = 109.99;
 
 console.log(` Jeu vidéo : ${prixJeu}€`);
 
+console.log();
+
 // Test 1 : Promotion d'été
 const prixEte = promotionEte(prixJeu);
 afficherPromotion("PROMOTION D'ÉTÉ ", prixJeu, prixEte, 20);

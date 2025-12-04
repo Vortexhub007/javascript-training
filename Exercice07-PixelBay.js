@@ -19,7 +19,7 @@ console.log("=== Système de Codes Secrets PixelBay ===");
 
 // === DÉFINITION DU CODE SECRET ===
 // Changez cette valeur pour tester différents codes
-const codeSecret = "Vrai"; // Essayez : "Alpha", "Bravo", "Charlie", "Delta", "Zulu"
+const codeSecret = "Alpha"; // Essayez : "Alpha", "Bravo", "Charlie", "Delta", "Zulu"
 
 console.log(`Code reçu : ${codeSecret}`);
 

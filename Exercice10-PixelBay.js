@@ -16,9 +16,7 @@ Votre programme doit accomplir les tâches suivantes :
 
 console.log("=== Gestion de l'Inventaire PixelBay ===");
 
-// ============================================
-// ÉTAPE 1 : CRÉATION DE L'INVENTAIRE INITIAL
-// ============================================
+
 
 const inventaire = [
   "Manette PS5",
@@ -36,11 +34,8 @@ inventaire.forEach((article, index) => {
   console.log(`${index + 1}. ${article}`);
 });
 
-console.log("=".repeat(50));
+console.log();
 
-// ============================================
-// ÉTAPE 2 : AJOUT DE NOUVEAUX ARTICLES
-// ============================================
 
 console.log(" Ajout de nouveaux articles...");
 
@@ -59,7 +54,7 @@ inventaire.forEach((article, index) => {
   console.log(`${index + 1}. ${article}`);
 });
 
-console.log("=".repeat(50));
+console.log();
 
 // ============================================
 // ÉTAPE 3 : SUPPRESSION DU PREMIER ARTICLE
@@ -77,7 +72,7 @@ inventaire.forEach((article, index) => {
   console.log(`${index + 1}. ${article}`);
 });
 
-console.log("=".repeat(50));
+console.log();
 
 // ============================================
 // ÉTAPE 4 : AFFICHAGE FINAL DÉTAILLÉ

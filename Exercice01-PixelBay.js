@@ -44,12 +44,12 @@ let stockActuel = stockInitial - jeuxVendus;
 const chiffreAffaires = jeuxVendus * prixParJeu;
 
 // === AFFICHAGE DES RÉSULTATS ===
-console.log("📊 État du stock :");
+console.log("État du stock :");
 console.log("Stock initial : " + stockInitial + " jeux");
 console.log("Jeux vendus pendant la promo : " + jeuxVendus + " jeux");
 console.log("Stock restant : " + stockActuel + " jeux");
 
-console.log("\n💰 Résultats financiers :");
+console.log("Résultats financiers :");
 console.log("Chiffre d'affaires généré : " + chiffreAffaires + " €");
 
 

@@ -9,7 +9,7 @@ Contexte : PixelBay souhaite filtrer sa collection de jeux pour proposer des rec
 
 Développez :
 
-Filtrer par A2nnée : Sélectionner les jeux sortis après une certaine année
+Filtrer par Année : Sélectionner les jeux sortis après une certaine année
 Filtrer par Genre : Sélectionner les jeux d'un genre spécifique */
 
 
