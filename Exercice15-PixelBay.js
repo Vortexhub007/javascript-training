@@ -1,3 +1,4 @@
+const readlineSync = require('readline-sync');
 /* Exercice 15 - BONUS : Calculateur d'Année Bissextile
 Tags : function, readline-sync, bonus
 
@@ -25,12 +26,19 @@ Exemples :
 1900 n'est pas bissextile (divisible par 100 mais pas par 400)
 2023 n'est pas bissextile (pas divisible par 4) */
 
-
-import readlineSync from 'readline-sync';
-
-function isBissextile(annee) {
-    
+function bisextile(annee) {
+    if ((annee % 4 === 0 && annee % 100 !== 0) || (annee % 400 === 0)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-const anneeUtilisateur = readlineSync.question('Entrez une année : ');
-// Affichez si l'année est bissextile
+let anneeUtilisateur = readlineSync.question("Veuillez entrer une année : ");
+let isBisextile = bisextile(Number(anneeUtilisateur));
+
+if(isBisextile) {
+    console.log(anneeUtilisateur + " est une année bisextile.");
+} else {
+    console.log(anneeUtilisateur + " n'est pas une année bisextile.");
+}
